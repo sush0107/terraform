@@ -11,7 +11,11 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "terraform-ubuntu" {
+resource "azurerm_resource_group" "terraform-ubuntu1" {
   name     = "terraform"
   location = "East US"
+}
+
+output "rg" {
+  value = "${azurerm_resource_group.terraform-ubuntu.name} has been created successfully"
 }
