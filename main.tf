@@ -11,7 +11,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "terraform" {
-  name     = "terraform-resources"
+resource "azurerm_resource_group" "terraform-ubuntu" {
+  name     = "terraform"
   location = "East US"
 }
