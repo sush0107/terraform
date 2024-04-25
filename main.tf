@@ -12,7 +12,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "terraform-ubuntu1" {
-  name     = "terraform"
+  name     = "terraform1"
   location = "East US"
 }
 
